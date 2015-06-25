@@ -1,10 +1,23 @@
 {
-    "name": "onclick/skelet",
-    "authors": [
-        {
-            "name": "Adrian Pietka",
-            "email": "adrian@pietka.me"
-        }
-    ],
-    "require": {}
+  "name": "onclick/php-boilerplate",
+  "license": "MIT",
+  "description": "PHP project boilerplate.",
+  "authors": [
+    {
+      "name": "Adrian Piętka",
+      "email": "adrian@pietka.me"
+    }
+  ],
+  "scripts": {
+    "test": "php vendor/phpunit/phpunit/phpunit --testdox --configuration tests/phpunit.xml"
+  },
+  "autoload": {
+    "psr-4": {"Onclick\\Boilerplate\\": "src/"}
+  },
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.7"
+  }
 }
